@@ -16,9 +16,9 @@ body {
 }
 
 header {
-    background-color: #A8D0E6;
-    font-size: 13px;
-    /* color: #24305e; */
+    background-color: #24305e;
+    font-size: 15px;
+    color: white;
     padding: 10px;
     text-align: center;
 }
@@ -31,7 +31,6 @@ header {
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-    width: 100vw;
 }
 
 .players {
@@ -40,9 +39,9 @@ header {
     /* border: 4px solid black; */
     border-radius: 10px;
     box-shadow: 2px 4px 10px rgb(0, 0, 0, 25%);
-    width: 100vw;
     position: relative;
-    max-width: 450px;
+    width: 100vw;
+    max-width: 300px;
 }
 
 .scores {
@@ -76,7 +75,7 @@ header {
     background-color: #F8E9A1;
     border-radius: 5px;
     zoom: 1.15;
-    animation: ease-in-out;
+    /* animation: ease-out; */
 }
 
 .action {
@@ -89,6 +88,11 @@ button {
     font-size: 15px;
     font-family: inherit;
     border-radius: 5px;
+}
+
+button:hover {
+    filter: brightness(110%);
+    cursor: pointer;
 }
 
 .footer {

@@ -24,9 +24,9 @@ const win = (userChoice, computerChoice) => {
     userScore_span.innerHTML = userScore;
     result.innerHTML = `${userChoice} beats ${computerChoice}. You won!`;
     selection.classList.add('selection');
-    setTimeout(() => { selection.classList.remove('selection') }, 500);
+    setTimeout(() => { selection.classList.remove('selection') }, 800);
     selectionComp.classList.add('selection');
-    setTimeout(() => { selectionComp.classList.remove('selection') }, 500);
+    setTimeout(() => { selectionComp.classList.remove('selection') }, 800);
 }
 
 const lose = (userChoice, computerChoice) => {
@@ -36,9 +36,9 @@ const lose = (userChoice, computerChoice) => {
     computerScore_span.innerHTML = computerScore;
     result.innerHTML = `${computerChoice} beats ${userChoice}. You lost!`;
     selection.classList.add('selection');
-    setTimeout(() => { selection.classList.remove('selection') }, 500);
+    setTimeout(() => { selection.classList.remove('selection') }, 800);
     selectionComp.classList.add('selection');
-    setTimeout(() => { selectionComp.classList.remove('selection') }, 500);
+    setTimeout(() => { selectionComp.classList.remove('selection') }, 800);
 }
 
 const draw = (userChoice, computerChoice) => {
@@ -46,10 +46,9 @@ const draw = (userChoice, computerChoice) => {
     const selectionComp = document.getElementById(computerChoice + 'Comp');
     result.innerHTML = 'It\'s a draw.';
     selection.classList.add('selection');
-    setTimeout(() => { selection.classList.remove('selection') }, 500);
+    setTimeout(() => { selection.classList.remove('selection') }, 800);
     selectionComp.classList.add('selection');
-    setTimeout(() => { selectionComp.classList.remove('selection') }, 500);
-
+    setTimeout(() => { selectionComp.classList.remove('selection') }, 800);
 }
 
 const game = (userChoice) => {
@@ -69,7 +68,7 @@ const game = (userChoice) => {
         case ('rockrock'):
         case ('scissorsscissors'):
         case ('paperpaper'):
-            draw();
+            draw(userChoice, computerChoice);
             break;
     }
 }
@@ -94,6 +93,8 @@ const restartGame = () => {
     reset.addEventListener('click', () => {
         userScore = 0;
         computerScore = 0;
+        userScore_span.innerHTML = userScore;
+        computerScore_span.innerHTML = computerScore;
     })
 }
 
