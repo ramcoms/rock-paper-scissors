@@ -54,7 +54,7 @@ header {
 }
 
 .choices {
-    font-size: 75px;
+    font-size: 70px;
     margin-top: 8px;
     border-top: 1px solid gray;
     display: flex;
@@ -105,4 +105,10 @@ button:hover {
     background-color: #24305e;
     color: white;
     text-align: center;
+  }
+
+  i {
+      color: white;
+      font-size: 1rem;
+      margin-right: 3px;
   }
