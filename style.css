@@ -59,7 +59,6 @@ header {
     border-top: 1px solid gray;
     display: flex;
     justify-content: space-evenly;
-    /* transform: all 0.5s ease; */
 }
 
 #rock, #paper, #scissors {
